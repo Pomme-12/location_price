@@ -2,21 +2,20 @@ name: Test FastAPI Project
 on:
  workflow_dispatch:
  push:
-  branches:
-    - main
-
+   branches:
+     - main
 jobs:
-test:
+ test:
 
 
-  runs-on: ubuntu-latest
-  steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+   runs-on: ubuntu-latest
+   steps:
+     - name: Checkout repository
+       uses: actions/checkout@v4
 
-    - name: Hello CI/CD
+
+    - name: Hello CI/CID
        run: |
-        echo "===== Hello I am testing CI/CD========="
-    
+         echo "===== Hello I am testing CI/CD====="
     - name: Show Docker images
-       run: docker images 
+       run: docker images
